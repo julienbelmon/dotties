@@ -1,0 +1,11 @@
+_agent-start() {
+        eval `ssh-agent`
+        ssh-add
+        export PS1="(agent) $PS1"
+}
+
+alias _boulot-start="tmux new-session -A -tboulot"
+export EDITOR=hx
+alias ls="ls --color"
+
+bindkey -e
