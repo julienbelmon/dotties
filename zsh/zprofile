@@ -8,4 +8,11 @@ alias _boulot-start="tmux new-session -A -tboulot"
 export EDITOR=hx
 alias ls="ls --color"
 
+PATH="/Users/j.belmon/software/apache-maven-3.9.9/bin:${PATH}"
+PATH="/Users/j.belmon/.local/bin:${PATH}"
+export PATH
+export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH="/Users/j.belmon/software/jdt-ls/bin:${PATH}"
+
 bindkey -e
