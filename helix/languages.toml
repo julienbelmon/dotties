@@ -1,0 +1,23 @@
+[[language]]
+name = "yaml"
+file-types = ["yaml", "yml"]
+
+[language.formatter]
+command = "yq"
+args = ["eval", "."]
+
+[[language]]
+name = "xml"
+file-types = ["xml", "wsdl", "bpmn"]
+
+[language.formatter]
+command = "xmllint"
+args = ["-"]
+
+[[language]]
+name = "json"
+file-types = ["json"]
+
+[language.formatter]
+command = "jq"
+args = ["."]
